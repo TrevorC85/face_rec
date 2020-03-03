@@ -225,7 +225,7 @@ def CamraCap(classifier, video_capture):
         while 0 == len(predictions):
             print("Capturing image.")
             with picamera.array.PiRGBArray(camera) as stream:
-                camera.capture(stream, format='RGB')
+                camera.capture(stream, format='rgb')
                 # At this point the image is available as stream.array
                 image = stream.array
 
